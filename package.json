@@ -1,0 +1,21 @@
+{
+    "name": "tstuto-monorepo",
+    "private": true,
+    "version": "0.0.0",
+    "description": "Root repository for the TS project tutorial",
+    "scripts": {},
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/inquirer": "0.0.41",
+        "@types/node": "^10.0.4",
+        "@types/semver": "^5.5.0",
+        "@types/shelljs": "^0.7.9",
+        "inquirer": "^5.2.0",
+        "semver": "^5.5.0",
+        "shelljs": "^0.8.1",
+        "ts-node": "^6.0.3",
+        "tslib": "^1.9.0",
+        "typescript": "^2.8.3"
+    }
+}

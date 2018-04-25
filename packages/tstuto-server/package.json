@@ -1,27 +1,32 @@
 {
-    "name": "tstuto-server",
+    "name": "<NPM_USER>/tstuto-server",
     "version": "0.0.0",
     "description": "An awesome and type safe app",
     "main": "bin/server.js",
-    "scripts": {
-        "start": "node bin/server.js",
-        "prestart": "npm run build",
-        "build": "npm run clean && tsc",
-        "clean": "rimraf dist/",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
+    "files": [
+        "bin",
+        "dist"
+    ],
     "bin": {
         "my-awesome-app": "./bin/server.js"
+    },
+    "scripts": {
+        "start": "cross-env NODE_PATH=../.. node bin/server.js",
+        "build": "npm run clean && tsc",
+        "clean": "rimraf dist/",
+        "test": "echo \"You would normally have a real test suite here\""
     },
     "author": "",
     "license": "MIT",
     "dependencies": {
+        "express": "^4.16.3",
+        "tslib": "^1.9.0"
+    },
+    "devDependencies": {
         "@types/express": "^4.11.1",
         "@types/node": "^9.6.0",
         "cross-env": "^5.1.4",
-        "express": "^4.16.3",
         "rimraf": "^2.6.2",
-        "tslib": "^1.9.0",
         "typescript": "^2.7.2"
     }
 }

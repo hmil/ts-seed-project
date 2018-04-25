@@ -1,3 +1,4 @@
+import { IMoodAPIResponse } from '<NPM_USER>/tstuto-api';
 import axios from 'axios';
 
 /**
@@ -19,7 +20,7 @@ window.setup = () => {
     }
 
     btn.addEventListener('click', async () => {
-        const mood = await axios.get('/api/mood');
+        const mood = await axios.get<IMoodAPIResponse>('/api/mood');
         output.innerText = mood.data.text;
     });
 }

@@ -11,6 +11,8 @@ module.exports = {
         ]
     },
 
+    mode: process.env.NODE_ENV || 'development',
+
     externals: {
         // Add here any module you do not want to bundle with your application.
         // In general, those will be libraries such as React, angular, etc... You'll want
