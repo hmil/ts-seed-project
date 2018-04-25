@@ -1,0 +1,17 @@
+{
+  "name": "tstuto-api",
+  "version": "0.0.0",
+  "description": "An awesome and type safe app",
+  "main": "dist/index.js",
+  "types": "TODO",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf dist/"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "typescript": "^2.7.2"
+  }
+}
